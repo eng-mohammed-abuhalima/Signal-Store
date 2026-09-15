@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   deploy:
@@ -21,7 +19,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
@@ -29,17 +27,25 @@ jobs:
 
       - name: Build project
         run: npm run build
+        env:
+          VITE_BASE: /Signal-Store/${{ github.ref_name }}/
 
-      - name: Prepare version folder
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+        continue-on-error: true
+
+      - name: Prepare version
         run: |
-          mkdir deploy
-          cp -r dist/. deploy/
-          echo "${GITHUB_REF_NAME}" > deploy/version.txt
+          mkdir -p gh-pages/${{ github.ref_name }}
+          rm -rf gh-pages/${{ github.ref_name }}/*
+          cp -r dist/. gh-pages/${{ github.ref_name }}/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./deploy
-          destination_dir: ${{ github.ref_name }}
+          publish_dir: ./gh-pages
           keep_files: true
