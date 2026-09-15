@@ -1,0 +1,26 @@
+/* اخفاء مؤششر التمرير مع بقاء ميزة التمرير مفعلة */
+.scrollbar-hidden {
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Edge, Safari */
+}
+
+
+
+/* لتنعيم السكرول لو اردت */
+.scrollbar-custom::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 9999px;
+}
