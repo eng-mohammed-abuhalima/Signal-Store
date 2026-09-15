@@ -1,16 +1,67 @@
-# React + Vite
+# 🛍️ Signal Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern technology e-commerce store built with **React**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+Developed as a learning project during my Full Stack training at Taqat Gaza, with a focus on building clean, responsive, and scalable user interfaces.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+Coming soon...
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+- DummyJSON API
+- React Hot Toast
+- Lucide React
+- React Icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Current Features
+
+- 🛍️ Browse technology products
+- 🛒 Add products to cart
+- ➕➖ Increase and decrease product quantities
+- 💾 Persist cart data using Local Storage
+- 💰 Automatic subtotal calculation
+- ⭐ Product ratings
+- 📱 Responsive design
+- 🪟 Product details modal
+- 🔔 Toast notifications
+
+## 📚 Learning Goals
+
+This project is mainly focused on practicing:
+
+- React components and props
+- `useState`
+- `useContext`
+- `useEffect`
+- `useRef`
+- Local Storage
+- Reusable components
+- Responsive UI development
+- Clean and maintainable code
+
+## 🔮 Future Improvements
+
+Signal Store will be continuously improved as I progress in my Full Stack learning journey.
+
+Planned improvements include:
+
+- User authentication
+- Product filtering and sorting
+- Improved search experience
+- Wishlist
+- Checkout flow
+- Backend integration
+- Database integration
+- Order management
+
+## 👨‍💻 About
+
+Built as part of my journey learning **Full Stack Web Development** and **React** at Taqat Gaza.
+
+This project is continuously evolving as I learn and implement new concepts.
