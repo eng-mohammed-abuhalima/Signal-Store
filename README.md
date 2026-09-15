@@ -2,7 +2,7 @@
 
 A modern technology e-commerce store built with **React**, **Vite**, and **Tailwind CSS**.
 
-Signal Store is an ongoing learning project developed during my **Full Stack training at Taqat Gaza**, where I practice and apply React concepts by building a real-world e-commerce experience.
+Developed as a learning project during my Full Stack training at Taqat Gaza, with a focus on building clean, responsive, and scalable user interfaces.
 
 ## 🚀 Live Demo
 
@@ -22,7 +22,6 @@ Coming soon...
 ## ✨ Current Features
 
 * 🛍️ Browse technology products
-* 🔎 Product search
 * 🛒 Add products to cart
 * ➕➖ Increase and decrease product quantities
 * 💾 Persist cart data using Local Storage
@@ -37,9 +36,10 @@ Coming soon...
 This project is mainly focused on practicing:
 
 * React components and props
-* `useState` and `useContext`
-* Context API and state management
-* Working with APIs
+* `useState`
+* `useContext`
+* `useEffect`
+* `useRef`
 * Local Storage
 * Reusable components
 * Responsive UI development
